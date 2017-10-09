@@ -212,8 +212,28 @@ namespace Calculator
             }
             else
             {
-                resultVariable = operand1 + operand2;
-                operand1 = resultVariable;
+                if (operation == '+')
+                {
+                    resultVariable = operand1 + operand2;
+                    operand1 = resultVariable;
+                }
+                if (operation == '-')
+                {
+                    resultVariable = operand1 - operand2;
+                    operand1 = resultVariable;
+                }
+                if (operation == '*')
+                {
+                    resultVariable = operand1 * operand2;
+                    operand1 = resultVariable;
+                }
+                if (operation == '/')
+                {
+                    resultVariable = operand1 / operand2;
+                    operand1 = resultVariable;
+                }
+
+                
             }
             operation = '+';
             buttoonPress = false;
